@@ -365,7 +365,7 @@ export default function App() {
     if (!answer.trim()) return;
     setLoading(true);
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/feedback', {
+      const response = await fetch('https://interview-coach-3.onrender.com/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -399,7 +399,7 @@ export default function App() {
     
     setGeneratingQuestions(true);
     try {
-      const response = await fetch('http://127.0.0.1:5000/api/generate-questions', {
+      const response = await fetch('https://interview-coach-3.onrender.com/api/feedback', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
